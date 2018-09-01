@@ -516,7 +516,8 @@ int ddr3_tip_a38x_get_init_freq(int dev_num, enum hws_ddr_freq *freq)
 		*freq = DDR_FREQ_900;
 		break;
 	case 0x13:
-		*freq = DDR_FREQ_900;
+		/**freq = DDR_FREQ_900;*/
+		*freq = DDR_FREQ_800;
 		break;
 	default:
 		*freq = 0;
